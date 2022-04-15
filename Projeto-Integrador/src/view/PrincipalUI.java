@@ -97,9 +97,6 @@ public class PrincipalUI extends JFrame {
 		
 		JMenuItem jntmRegistrarChamado = new JMenuItem("Registrar Chamado");
 		jmnChamado.add(jntmRegistrarChamado);
-		
-		JMenuItem JntnConsultarChamado = new JMenuItem("Consultar Chamado");
-		jmnChamado.add(JntnConsultarChamado);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));

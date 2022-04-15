@@ -26,6 +26,7 @@ public class ConsultaChamadoUI extends JInternalFrame {
 	 * Create the frame.
 	 */
 	public ConsultaChamadoUI() {
+		setTitle("Consulta Chamado");
 		setBounds(100, 100, 450, 300);
 
 	}
