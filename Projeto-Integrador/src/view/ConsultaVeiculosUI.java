@@ -55,6 +55,10 @@ public class ConsultaVeiculosUI extends JInternalFrame {
 		});
 		
 		JButton jbtnEditar = new JButton("Editar");
+		jbtnEditar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		GroupLayout groupLayout = new GroupLayout(getContentPane());
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
