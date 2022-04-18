@@ -46,8 +46,17 @@ public class ConsultaChamadoUI extends JInternalFrame {
 		});
 		
 		JButton jbtnExcluir = new JButton("Excluir");
+		jbtnExcluir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				dispose();
+			}
+		});
 		
 		JButton jbtnEditar = new JButton("Editar");
+		jbtnEditar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		GroupLayout groupLayout = new GroupLayout(getContentPane());
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
