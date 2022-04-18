@@ -1,13 +1,12 @@
 package view.tebles;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.table.AbstractTableModel;
 
 import Modelo.Chamado;
-import Modelo.Colaboradores;
+
 
 public class ConsultaChamadoTableModel extends AbstractTableModel {
 	
