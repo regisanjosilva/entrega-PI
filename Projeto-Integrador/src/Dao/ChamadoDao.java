@@ -3,6 +3,7 @@ package Dao;
 import java.sql.Connection;
 
 
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -35,7 +36,7 @@ public class ChamadoDao {
 			pstmt.setDouble(2, chamado.getDistanciaPercorrida());
 			pstmt.setDouble(3, chamado.getCo2Emitido());
 			pstmt.setString(4, chamado.getIdPlaca());
-			pstmt.setInt(5, 0);
+			pstmt.setInt(5, chamado.getIdColaboradores());
 			int key = pstmt.executeUpdate();
 			
 			if (key > 0) {
@@ -78,13 +79,14 @@ public class ChamadoDao {
 			ResultSet rs = stmt.executeQuery(sql);
 			while (rs.next())
 				;
-			Chamado c = new chamado() {
-					
+			Chamado c = new Chamado() {
+				{					
 			c.setId(rs.getInt("id"));
 			c.setDistanciaPercorrida(rs.getDouble("DistanciaPercorrida"));
 			c.setCo2Emitido(rs.getDouble("co2Emitido"));
 			listaChamado.add(c);
-
+			
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -98,5 +100,5 @@ public class ChamadoDao {
 	public void setListaChamado(List<Chamado> listaChamado) {
 		ListaChamado = listaChamado;
 	}
-
+	
 }
